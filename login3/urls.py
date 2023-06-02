@@ -1,5 +1,5 @@
 """
-URL configuration for login3 project.
+URL configuration for women project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -17,8 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from myapp.views import *
-
+###Atagulyyew Suwhan
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('register/',RegisterView.as_view())
+    path('register/',UserRegisterView.as_view()),
+    path('login/',UserLoginView.as_view()),
 ]
